@@ -1,25 +1,25 @@
 /* colors */
 :root {
-    --focus: #0f6cbd;
-    --over-focus: #115ea3;
-    --active-focus: #0c3b5e;
-    --on-focus: white;
-
     --bg: url(bg-light.svg);
+    --focus: #292929;
+    --over-focus: #3b3b3b;
+    --active-focus: #000000;
+    --on-focus: white;
     --blur-amount: 100px;
-    --contrast-amount: 100%;
-    --brightness-amount: 100%;
+    --contrast-amount: 110%;
+    --brightness-amount: 90%;
     --saturation-amount: 500%;
     --border: #61616133;
-    --base: #ffffffaa;
+    --base: #ffffff77;
     --base-opaque: #ffffff;
     --on-base: #242424;
     --on-base-low: #737373;
+    --secondary: #ffffff;
     --over-secondary: #f5f5f5;
     --activate-secondary: #e0e0e0;
-    --wide: #ffffff22;
-    --over-wide: #ffffff55;
-    --active-wide: #00000022;
+    --wide: #ffffff66;
+    --over-wide: #ffffffbb;
+    --active-wide: #00000011;
     --border-low: #e0e0e0;
     --border-medium: #d1d1d1;
     --border-high: #616161;
@@ -28,19 +28,24 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --bg: url(bg-dark.svg);
+        --focus: #d8d8d8;
+        --over-focus: #eaeaea;
+        --active-focus: #b3b3b3;
+        --on-focus: black;
         --blur-amount: 100px;
-        --contrast-amount: 300%;
-        --brightness-amount: 150%;
-        --saturation-amount: 150%;
+        --contrast-amount: 200%;
+        --brightness-amount: 70%;
+        --saturation-amount: 250%;
         --border: #00000033;
         --base: #292929aa;
         --base-opaque: #292929;
         --on-base: #ffffff;
         --on-base-low: #adadad;
-        --over-secondary: #3d3d3d;
-        --activate-secondary: #1f1f1f;
+        --secondary: #2f2f2f;
+        --over-secondary: #353535;
+        --activate-secondary: #242424;
         --wide: #29292977;
-        --over-wide: #292929cc;
+        --over-wide: #3a3a3a77;
         --active-wide: #00000022;
         --border-low: #525252;
         --border-medium: #666666;
@@ -170,6 +175,10 @@ label {
     font-size: 80%;
 }
 
+.big {
+    font-size: 150%;
+}
+
 .subtext {
     color: var(--on-base-low);
 }
@@ -190,8 +199,6 @@ label {
 .inner-card {
     background-color: var(--base-opaque);
     border-radius: 7.5px;
-    box-shadow: 0 0 10px #00000046,
-        0 8px 15px #00000046;
     padding: 25px;
 }
 
@@ -220,8 +227,7 @@ label {
     width: 150px;
     padding: 8px 20px;
     border-radius: 4px;
-    box-shadow: 0 0 10px #00000046,
-        0 8px 15px #00000046;
+    box-shadow: 0 4px 10px #00000046;
 }
 
 .button {
@@ -242,7 +248,7 @@ label {
 }
 
 .button.secondary {
-    background-color: var(--base);
+    background-color: var(--secondary);
     color: var(--on-base);
 }
 
