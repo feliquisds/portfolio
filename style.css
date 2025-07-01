@@ -4,7 +4,7 @@
     --over-focus: #115ea3;
     --active-focus: #0c3b5e;
     --on-focus: white;
-    
+
     --bg: url(bg-light.svg);
     --blur-amount: 100px;
     --contrast-amount: 100%;
@@ -228,7 +228,8 @@ label {
     background-color: var(--focus);
 }
 
-.button:not(.secondary, .wide), .button:not(.secondary, .wide) > span {
+.button:not(.secondary, .wide),
+.button:not(.secondary, .wide)>span {
     color: var(--on-focus);
 }
 
@@ -288,11 +289,15 @@ label {
     border-radius: 100%;
 }
 
-.project-banner > img {
+.project-banner>img {
     min-width: 150px;
-    width: 100%;
     max-width: 300px;
     filter: drop-shadow(0 0 5px rgb(151, 220, 90));
+}
+
+.project-banner,
+.project-banner>img {
+    width: 100%;
 }
 
 .end {
@@ -305,16 +310,16 @@ label {
         flex-direction: column;
     }
 
-    .items-row.responsive > *:not(:last-child, .skip) {
+    .items-row.responsive>*:not(:last-child, .skip) {
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .items-row.responsive > *.double:not(:last-child, .skip) {
+    .items-row.responsive>*.double:not(:last-child, .skip) {
         margin-bottom: 20px;
     }
 
-    .items-row.responsive > *.half:not(:last-child, .skip) {
+    .items-row.responsive>*.half:not(:last-child, .skip) {
         margin-bottom: 5px;
     }
 
@@ -324,32 +329,32 @@ label {
         flex-direction: column-reverse;
     }
 
-    .items-row.responsive.reverse > *:not(:last-child, .skip) {
+    .items-row.responsive.reverse>*:not(:last-child, .skip) {
         margin-right: 0;
         margin-bottom: 0;
     }
 
-    .items-row.responsive.reverse > *.double:not(:last-child, .skip) {
+    .items-row.responsive.reverse>*.double:not(:last-child, .skip) {
         margin-bottom: 0;
     }
 
-    .items-row.responsive.reverse > *.half:not(:last-child, .skip) {
+    .items-row.responsive.reverse>*.half:not(:last-child, .skip) {
         margin-bottom: 0;
     }
 
-    .items-row.responsive.reverse > *:not(:first-child, .skip) {
+    .items-row.responsive.reverse>*:not(:first-child, .skip) {
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .items-row.responsive.reverse > *.double:not(:first-child, .skip) {
+    .items-row.responsive.reverse>*.double:not(:first-child, .skip) {
         margin-bottom: 20px;
     }
 
-    .items-row.responsive.reverse > *.half:not(:first-child, .skip) {
+    .items-row.responsive.reverse>*.half:not(:first-child, .skip) {
         margin-bottom: 10px;
     }
-    
+
     .xcenter-responsive {
         justify-self: center;
         justify-items: center;
