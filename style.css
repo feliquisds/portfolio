@@ -216,6 +216,8 @@ label {
 
 .button:not(.wide),
 .button.secondary:not(.wide) {
+    text-align: center;
+    width: 150px;
     padding: 8px 20px;
     border-radius: 4px;
     box-shadow: 0 0 10px #00000046,
@@ -273,6 +275,7 @@ label {
 /* overrides */
 .profile {
     width: 150%;
+    max-width: inherit;
 }
 
 .socials {
@@ -287,6 +290,7 @@ label {
 
 .project-banner > img {
     min-width: 150px;
+    width: 100%;
     max-width: 300px;
     filter: drop-shadow(0 0 5px rgb(151, 220, 90));
 }
@@ -297,22 +301,57 @@ label {
 }
 
 @media (max-width: 800px) {
-    header {
+    .items-row.responsive {
         flex-direction: column;
     }
-    
-    .items-row > .profile {
+
+    .items-row.responsive > *:not(:last-child, .skip) {
         margin-right: 0;
-        width: 100%;
         margin-bottom: 10px;
     }
 
-    .projects > div {
-        flex-direction: column;
+    .items-row.responsive > *.double:not(:last-child, .skip) {
+        margin-bottom: 20px;
     }
 
-    .items-row > .project-banner.double {
+    .items-row.responsive > *.half:not(:last-child, .skip) {
+        margin-bottom: 5px;
+    }
+
+
+
+    .items-row.responsive.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .items-row.responsive.reverse > *:not(:last-child, .skip) {
         margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .items-row.responsive.reverse > *.double:not(:last-child, .skip) {
+        margin-bottom: 0;
+    }
+
+    .items-row.responsive.reverse > *.half:not(:last-child, .skip) {
+        margin-bottom: 0;
+    }
+
+    .items-row.responsive.reverse > *:not(:first-child, .skip) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .items-row.responsive.reverse > *.double:not(:first-child, .skip) {
         margin-bottom: 20px;
+    }
+
+    .items-row.responsive.reverse > *.half:not(:first-child, .skip) {
+        margin-bottom: 10px;
+    }
+    
+    .xcenter-responsive {
+        justify-self: center;
+        justify-items: center;
     }
 }
