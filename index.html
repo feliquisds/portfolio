@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@feliquisds</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="vertical base">
-    <header class="vertical center">
-        <div>
-            <div id="header" class="vertical half-gap">
-                <h1>Felix de Souza</h1>
-                <p class="over-base-low">@feliquisds</p>
+
+<body>
+    <header class="flex items-row">
+        <div class="card flex xcenter items-row profile">
+            <div class="left ycenter double items-column right">
+                <h1 class="half">Felix de Souza</h1>
+                <p class="subtext">@feliquisds</p>
             </div>
-            <div class="center">
+            <div class="ycenter">
                 <img class="pfp" src="https://avatars.githubusercontent.com/u/93457386">
             </div>
         </div>
-        <div class="center fixed">
-            <a class="chip focus-card" href="https://bsky.app/profile/feliquisds.one" target="_blank"><span class="icon">subject</span>Blog</a>
-            <a class="chip focus-card" href="https://github.com/feliquisds" target="_blank"><span class="icon">code</span>GitHub</a>
-        </div>
-    </header>
-    <section class="vertical base-low">
-        <h3>hi! my name is felix!</h3>
-        <p>i'm brazilian and a huge fan of tech!</p>
-        <div class="vertical half-gap">
-            <p>i mostly only listen to kpop and sonic OST, but to compensate, my interests/hobbies are quite varied</p>
-            <p class="over-base-low small">(art, writing, dance, photography, image/video editing, cooking, etc...)</p>
-        </div>
-        <p>my native language is portuguese, but i am fluent in english as well, and i'm curious about learning korean</p>
-        <p>i'm no programming-god, but i put effort into the stuff i do!</p>
-        <p>oh, and i'm taken ❤️</p>
-    </section>
-    <section class="vertical base-low">
-        <h1><span class="icon">workspaces</span>Projects</h1>
-        <div class="base-lower inner">
-            <div class="center">
-                <img class="project-banner" loading="lazy" src="https://github.com/feliquisds/iris/raw/main/Assets/Interface/main_menu/menu_logo.png?raw=true" alt="">
-            </div>
-            <div class="vertical right">
-                <div class="vertical">
-                    <h1>Íris: uma Jornada Atemporal</h1>
-                    <!-- <p>Desenvolvido com a game engine Unity, Íris: uma Jornada Atemporal é um jogo 2D de plataforma com enredo e visual vibrante.</p> -->
-                    <p>Developed with the game engine Unity, Íris: uma Jornada Atemporal is a 2D platformer with a charming appearance and storyline.</p>
-                    <div class="half-gap fixed">
-                        <p class="chip">C#</p>
-                        <p class="chip">Unity</p>
-                        <p class="chip">2023</p>
+        <div class="card xcenter ycenter items-column socials">
+            <a class="button wide double" href="https://bsky.app/profile/feliquisds.one" target="_blank">
+                <div class="flex polar">
+                    <div class="flex ycenter">
+                        <span class="icon ycenter">subject</span>
+                        <div class="items-column">
+                            <h4 class="half">Blog</h4>
+                            <p class="subtext small">i post on Bluesky sometimes</p>
+                        </div>
+                    </div>
+                    <div class="ycenter xcenter">
+                        <span class="icon no-margin">open_in_new</span>
                     </div>
                 </div>
-                <a href="https://github.com/feliquisds/iris" target="_blank"><span class="icon">open_in_new</span>Repository</a>
+            </a>
+            <a class="button wide" href="https://github.com/feliquisds" target="_blank">
+                <div class="flex polar">
+                    <div class="flex ycenter">
+                        <span class="icon ycenter">code</span>
+                        <div class="items-column">
+                            <h4 class="half">GitHub</h4>
+                            <p class="subtext small">i think it goes "hello world"?</p>
+                        </div>
+                    </div>
+                    <div class="ycenter xcenter">
+                        <span class="icon no-margin">open_in_new</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </header>
+    <section class="card left items-column">
+        <h2 class="double">hi! my name is felix!</h2>
+        <p>i'm brazilian and a huge fan of tech!</p>
+        <p class="half">i mostly only listen to kpop and sonic OST, but to compensate, my interests/hobbies are quite
+            varied</p>
+        <p class="subtext small">(art, writing, dance, photography, image/video editing, cooking, etc...)</p>
+        <p>my native language is portuguese, but i am fluent in english as well, and i'm curious about learning korean
+        </p>
+        <p class="double">i put effort into the stuff i do, and i'm always pumped to learn something new!</p>
+        <p>oh, and i'm taken ❤️</p>
+    </section>
+    <section class="card left items-column projects">
+        <h1 class="double">
+            <span class="icon">workspaces</span>Projects
+        </h1>
+        <div class="inner-card flex items-row">
+            <div class="ycenter xcenter double project-banner">
+                <img src="https://github.com/feliquisds/iris/raw/main/Assets/Interface/main_menu/menu_logo.png?raw=true">
+            </div>
+            <div class="right items-column">
+                <div class="left items-column double">
+                    <h2>Íris: uma Jornada Atemporal</h2>
+                    <!-- <p>Desenvolvido com a game engine Unity, Íris: uma Jornada Atemporal é um jogo 2D de plataforma com enredo e visual vibrante.</p> -->
+                    <p class="double">Developed with the game engine Unity, <b>Íris: uma Jornada Atemporal</b> is a 2D
+                        platformer with a charming appearance and storyline.</p>
+                    <div class="flex items-row">
+                        <p class="mini-card subtext">C#</p>
+                        <p class="mini-card subtext">Unity</p>
+                        <p class="mini-card subtext">2023</p>
+                    </div>
+                </div>
+                <div class="flex items-row">
+                    <a href="https://github.com/feliquisds/iris" target="_blank" class="button secondary double">
+                        <span class="icon">open_in_new</span>Repository
+                    </a>
+                    <a href="https://github.com/feliquisds/iris/releases/download/release/iris_rev2.zip" target="_blank" class="button">
+                        <span class="icon">download</span>Play now
+                    </a>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="center">
-        <p class="over-base-low">living with love, forevermore</p>
-    </footer>
+    <p class="subtext xcenter end">living with love, forevermore</p>
 </body>
+
 </html>
